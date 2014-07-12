@@ -1,0 +1,102 @@
+@charset "utf-8";
+/*
+Theme Name: Agência Leader
+Theme URI: http://agencialeader.com.br/
+Description: Desenvolvimento e consultoria.
+Version:1.0
+Author URI: http://agencialeader.com.br/
+*/
+html, body, div, span, applet, object, iframe, form, fieldset,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, var, small, strike, strong, sub, sup, tt, b, u, i,
+center, dl, dt, dd, ol, ul, li,  label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+del { text-decoration: line-through; }
+table{ border-collapse:separate; border-spacing:0;}
+a:link{color:#ff6633;text-decoration:none;outline:0;}
+a:visited{color:#ff6633;text-decoration:none;outline:0;}
+a:hover{color:#ff6633; text-decoration:none; outline:0;}
+a:active{color:#ccc;text-decoration:none;outline:0;}
+caption,th,td{font-weight:normal;text-align:left;}
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+small{font-size:0.625em;}
+big{font-size:1.0em;}
+img {max-width: 100%; max-height:100%;}
+img.alignright{float:right; margin:0 0 1em 1em}
+img.alignleft{float:left; margin:0 1em 1em 0}
+img.aligncenter{display: block; margin-left: auto; margin-right: auto}
+a img.alignright{float:right; margin:0 0 1em 1em}
+a img.alignleft{float:left; margin:0 1em 1em 0}
+a img.aligncenter{display: block; margin-left: auto; margin-right: auto}
+a img{border:0;}
+input{border:0.063em solid #33cc99;}
+p{line-height: 1.4em; padding-bottom:1.0em;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+*{margin:0; padding:0; outline:none; border:none; font-size: 1em; font-family: "open_sanslight"; color: #666;}
+body{height: 100%;}
+html{
+  overflow-x: hidden;
+  font-size: 1em;
+  -webkit-text-size-adjust: 1em;
+  -moz-text-size-adjust: 1em;
+  -ms-text-size-adjust: 1em;
+  -o-text-size-adjust: 1em;
+  text-size-adjust: 1em;
+}
+::-webkit-scrollbar{ width: 10px;}
+::-webkit-scrollbar-track-piece{ background-color: #EEE; border-left: 1px solid #CCC;}
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal{ background-color: #BAC0C4;}
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover{ background-color: #717171;}
+
+::-moz-scrollbar{ width: 10px;}
+::-moz-scrollbar-track-piece{ background-color: #EEE; border-left: 1px solid #CCC;}
+::-moz-scrollbar-thumb:vertical,
+::-moz-scrollbar-thumb:horizontal{ background-color: #BAC0C4;}
+::-moz-scrollbar-thumb:vertical:hover,
+::-moz-scrollbar-thumb:horizontal:hover{ background-color: #717171;}
+
+::-ms-scrollbar{ width: 10px;}
+::-ms-scrollbar-track-piece{ background-color: #EEE; border-left: 1px solid #CCC;}
+::-ms-scrollbar-thumb:vertical,
+::-ms-scrollbar-thumb:horizontal{ background-color: #BAC0C4;}
+::-ms-scrollbar-thumb:vertical:hover,
+::-ms-scrollbar-thumb:horizontal:hover{ background-color: #717171;}
+
+::-o-scrollbar{ width: 10px;}
+::-o-scrollbar-track-piece{ background-color: #EEE; border-left: 1px solid #CCC;}
+::-o-scrollbar-thumb:vertical,
+::-o-scrollbar-thumb:horizontal{ background-color: #BAC0C4;}
+::-o-scrollbar-thumb:vertical:hover,
+::-o-scrollbar-thumb:horizontal:hover{ background-color: #717171;}
+
+h1,h2,h3,h4,h5,h6 {line-height: 1.750em;                    }
+h1                {font-size: 2em;    margin: 0.67em 0;     }
+h2                {font-size: 1.5em;  margin: 0.83em 0;     }
+h3                {font-size: 1.17em; margin: 1em 0;        }
+h4                {font-size: 1em;    margin: 1.33em 0;     }
+h5                {font-size: 0.83em; margin: 1.67em 0;     }
+h6                {font-size: 0.75em; margin: 2.33em 0;     }
+/*===================================
+=            CSS-Default            =
+===================================*/
+.clear {clear: both;}
+.center{max-width: 63.750em; width: 85%; margin: 0 auto;}
+.floatleft{ float: left;}
+.floatright{float: right;}
+/*-----  Fim do CSS-Default  ------*/
