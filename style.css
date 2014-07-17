@@ -26,9 +26,9 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 :focus { outline: 0; }
 del { text-decoration: line-through; }
 table{ border-collapse:separate; border-spacing:0;}
-a:link{color:#ff6633;text-decoration:none;outline:0;}
-a:visited{color:#ff6633;text-decoration:none;outline:0;}
-a:hover{color:#ff6633; text-decoration:none; outline:0;}
+a:link{color:#1bac90;text-decoration:none;outline:0;}
+a:visited{color:#3C9;text-decoration:none;outline:0;}
+a:hover{color:#3d9; text-decoration:none; outline:0;}
 a:active{color:#ccc;text-decoration:none;outline:0;}
 caption,th,td{font-weight:normal;text-align:left;}
 i,em{font-style:italic;}
@@ -46,7 +46,7 @@ a img{border:0;}
 input{border:0.063em solid #33cc99;}
 p{line-height: 1.4em; padding-bottom:1.0em;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
-*{margin:0; padding:0; outline:none; border:none; font-size: 1em; font-family: "open_sanslight"; color: #666;}
+*{margin:0; padding:0; outline:none; border:none; font-size: 1em; font-family: "Arial"; color: #666;}
 body{height: 100%;}
 html{
   overflow-x: hidden;
@@ -85,18 +85,266 @@ html{
 ::-o-scrollbar-thumb:vertical:hover,
 ::-o-scrollbar-thumb:horizontal:hover{ background-color: #717171;}
 
-h1,h2,h3,h4,h5,h6 {line-height: 1.750em;                    }
-h1                {font-size: 2em;    margin: 0.67em 0;     }
-h2                {font-size: 1.5em;  margin: 0.83em 0;     }
-h3                {font-size: 1.17em; margin: 1em 0;        }
-h4                {font-size: 1em;    margin: 1.33em 0;     }
-h5                {font-size: 0.83em; margin: 1.67em 0;     }
-h6                {font-size: 0.75em; margin: 2.33em 0;     }
+h1,h2,h3,h4,h5,h6 {line-height: 1.750em; font-weight: normal; }
+h1                {font-size: 2em;    margin: 0.67em 0;       }
+h2                {font-size: 1.5em;  margin: 0.83em 0;       }
+h3                {font-size: 1.17em; margin: 1em 0;          }
+h4                {font-size: 1em;    margin: 1.33em 0;       }
+h5                {font-size: 0.83em; margin: 1.67em 0;       }
+h6                {font-size: 0.75em; margin: 2.33em 0;       }
 /*===================================
 =            CSS-Default            =
 ===================================*/
+@font-face {
+    font-family: 'rockwellregular';
+    src: url('fonts/rockwell/rock-webfont.eot');
+    src: url('fonts/rockwell/rock-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rockwell/rock-webfont.woff') format('woff'),
+         url('fonts/rockwell/rock-webfont.ttf') format('truetype'),
+         url('fonts/rockwell/rock-webfont.svg#rockwellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 .clear {clear: both;}
 .center{max-width: 63.750em; width: 85%; margin: 0 auto;}
 .floatleft{ float: left;}
 .floatright{float: right;}
+.cwhite{ color: #FFF;}
+.c3c9{ color: #3C9;}
+.m0{ margin: 0;}
+.p0{padding: 0;}
+.radius{
+  -webkit-border-radius: 0.313em;
+  -moz-border-radius: 0.313em;
+  -ms-border-radius: 0.313em;
+  -o-border-radius: 0.313em;
+  border-radius: 0.313em;
+}
+a.btn-subscribe{
+  -webkit-box-shadow: 0px 5px 0px rgba(166,63,29,0.8);
+  -moz-box-shadow: 0px 5px 0px rgba(166,63,29,0.8);
+  -ms-box-shadow: 0px 5px 0px rgba(166,63,29,0.8);
+  -o-box-shadow: 0px 5px 0px rgba(166,63,29,0.8);
+  box-shadow: 0px 5px 0px rgba(166,63,29,0.8);
+  padding: 0.5em 1.5em;
+  background: #F63;
+  color: #FFF;
+}
+.btn-vertodas{ background: transparent; border:1px solid #299; padding: 0.75em 1.5em; width: 20%; margin: 0 auto;}
+.btn-destaque{ background: transparent; border:1px solid #FFF; color: #FFF;  padding: 0.5em 1.5em;}
+.btn-destaque:hover{
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+  background: #FFF;
+  color: #3C9;
+}
+a.btn-sendnow{
+  -webkit-box-shadow: 0px 5px 0px rgba(175,175,175,0.8);
+  -moz-box-shadow: 0px 5px 0px rgba(175,175,175,0.8);
+  -ms-box-shadow: 0px 5px 0px rgba(175,175,175,0.8);
+  -o-box-shadow: 0px 5px 0px rgba(175,175,175,0.8);
+  box-shadow: 0px 5px 0px rgba(175,175,175,0.8);
+  border:1px solid #F1F1F1;
+  padding: 0.5em 1.5em;
+  background: #F1F1F1;
+  margin: 1.32em 0 0 0;
+  float: right;
+  color: #666;
+}
+a.btn-sendnow:active{
+  -webkit-box-shadow: 0px 0px 0px rgba(175,175,175,0.8);
+  -moz-box-shadow: 0px 0px 0px rgba(175,175,175,0.8);
+  -ms-box-shadow: 0px 0px 0px rgba(175,175,175,0.8);
+  -o-box-shadow: 0px 0px 0px rgba(175,175,175,0.8);
+  box-shadow: 0px 0px 0px rgba(175,175,175,0.8);
+  margin: 1.6em 0 0 0;
+}
+a.btn-contato{ background: #1bbc9d; color: #FFF; border:1px solid #3C9; padding: 0.5em 40%; width: 100%; text-align: center;}
+.btn-contato:hover{ background: #3C9;}
+.btn-social{ background-color: transparent; border:1px solid #299; padding: 0.5em 1.5em;}
+a.btn-social:hover{
+  background: #299;
+  color: #FFF;
+}
+.btn-more{ background: #F63; border-bottom:0.250em solid #ba4b26; padding: 0.5em 1.5em;}
 /*-----  Fim do CSS-Default  ------*/
+/*====================================
+=            Header-geral            =
+====================================*/
+.header-geral{ background: #333; min-height: 6.250em; }
+.header-geral li{float: left;}
+.logo-geral{ float: left; margin: 1.5em 0 0 0; max-width: 30%;}
+.menu-geral{ max-width: 60%; margin-left: 10%; margin-top: 2.7em; float: left;}
+.menu-cat ul{ width: 33.33%; float: left; background: #333; width: 90%; padding: 2em 5%;}
+.menu-cat li{ padding: 1em 0.250em; clear: both;}
+.menu-geral a{ color: #FFF; padding: 0.500em 1em; border:1px solid transparent;}
+.menu-geral a:hover{color: #ccc; border:1px solid #eee;}
+.menu-geral li  ul{
+position:absolute;
+top:4em;
+left: 0;
+display:none;
+}
+.menu-geral li:hover ul, .menu-geral li.hover ul{ display:block;}
+/*-----  End of Header-geral  ------*/
+/*=====================================
+=            Destaque-home            =
+=====================================*/
+.destaque-home{ background: #3C9; width: 100%; padding: 5em 0 3em 0;}
+.date-destaque{ line-height: 0.1em; color: #666; font-weight: bold; padding: 0;}
+.text-destaque{ width: 55%; float: left; }
+.text-destaque a{ color: #FFF;}
+.text-destaque h2, .textwhite{ color: #FFF;}
+.img-destaque{ width: 35%; margin-left: 10%;}
+/*-----  End of Destaque-home  ------*/
+/*=================================
+=            Novidades            =
+=================================*/
+.novidades{ text-align: center;}
+.novidades h2{font-family: 'rockwellregular';}
+.sobre{ padding: 2em;}
+.sobre p{ line-height: 2em;}
+.gme2{}
+.gme2 h2{ border: 1px solid #3C9; width: 40%; margin: 1em auto 3em auto; color: #ef6334; font-size: 1.2em;}
+.gme2 li{ float: left; width: 33.333333333%;}
+.gme2 p{ padding: 1em;}
+.gme2 a{ color: #FFF; text-transform: uppercase; }
+/*-----  End of Novidades  ------*/
+/*=============================
+=            Posts            =
+=============================*/
+.posts{}
+.vermaispost{ text-align: center;}
+.list-post{ width: 29.655%; float: left; margin: 3em 0;}
+.list-post img{ border: 5px solid #2098a6;}
+.mright{ margin-right: 5%; }
+.print-site{}
+.bg-posts-home p, .bg-posts-home h2{ padding: 0; width: 30%; margin: 0 auto;}
+.bg-posts-home p{ border-top: 1px solid #666; color: #FFF; text-transform: uppercase; }
+.bg-posts-home h2{ border-bottom: 1px solid #666; color: #219aa9; text-transform: uppercase; font-size: 1.800em; }
+.bg-posts-home{
+  background: #333 url(imagens/bg-posts-home.jpg) no-repeat fixed top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding: 1.5em 0;
+  margin: 2em 0 0 0;
+}
+p.cat-home{ line-height: 1em; margin: 0; padding: 0; }
+.title-posts-home a{ font-family: 'rockwellregular'; font-size: 1.35em; color: #ef6334; margin: 0; padding: 0; line-height: 1.5em;}
+.img-post-home{ width: 95%;}
+.title-posts-new a{ font-family: 'rockwellregular'; font-size: 1.3em; color: #ef6334;}
+.post-new{ width: 45%; border-left: 5px solid #F63; padding: 0 2%; float: left; margin: 1em 0 3.5em 0; }
+.post-new p{ color: #219aa9; text-align: justify; font-size: 0.900em; line-height: 1.5em; }
+/*-----  End of Posts  ------*/
+.post-new p, .post-new h3, .send-posts h3{ margin: 0; padding: 0;}
+/*==================================
+=            Send Posts            =
+==================================*/
+.send-posts{ background: #F63; padding: 1em 0; margin: 5em 0 0 0;}
+.send-posts-text{ width: 75%; float: left;}
+.send-posts h3{ font-family: 'rockwellregular'; font-size: 1.5em; color: #FFF;}
+.send-posts p{ color: #FFF;}
+/*-----  End of Send Posts  ------*/
+/*==================================
+=            Newsletter            =
+==================================*/
+.newsletter-home{
+  background: #F63 url(imagens/bg-newsletter.jpg) no-repeat fixed top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 3em 0;
+  min-height: 10.625em;
+}
+.box-newsletter{ width: 45%; background: rgba(41, 41, 41, 0.58); padding: 2.5em 3%;}
+.box-newsletter h3, .box-newsletter p{ padding: 0; margin: 0; color: #ddd; }
+.box-newsletter h3{ font-size: 2em; line-height: 1em; font-weight: normal;}
+.form-newsletter{
+  -webkit-box-shadow: 0px 5px 0px rgba(234,234,234,1);
+  -moz-box-shadow: 0px 5px 0px rgba(234,234,234,1);
+  -ms-box-shadow: 0px 5px 0px rgba(234,234,234,1);
+  -o-box-shadow: 0px 5px 0px rgba(234,234,234,1);
+  box-shadow: 0px 5px 0px rgba(234,234,234,1);
+  height: 2.2em;
+  margin-bottom: 0.5em;
+  border:none;
+  padding: 0 2%;
+  width: 30%;
+}
+/*-----  End of Newsletter  ------*/
+/*=================================
+=            Know more            =
+=================================*/
+.know-more{}
+.text-know-more{ width: 35%; float: left; min-height: 21em; }
+.text-know-more h3{ font-family: 'rockwellregular'; font-size: 1.4em; color: #ef6334;}
+.text-know-more p{ margin: 0 0 1em 0;}
+.social-know{}
+.know-more video{ width: 65%; float: left; min-height: 21em;}
+/*-----  End of Know more  ------*/
+/*====================================
+=            Footer Geral            =
+====================================*/
+.footer-geral{ 
+  background: #222 url(imagens/bg-footer.jpg) no-repeat fixed top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  min-height: 200px;
+  padding: 2.5em 0 1em 0;
+  width: 100%;
+  color: #FFF;
+}
+.patrocinio{float: left; width: 25%;}
+.social-footer{ float: left; width: 30%;}
+.pages{ float: left; width: 20%;}
+.contato-footer{ float: left; width: 25%;}
+.contato-footer form{width: 100%;}
+.cfooter{ background-color: transparent; color: #3C9; padding: 0.500em 3%; border: 1px solid rgba(255, 255, 255, 0.5);}
+.cfooter-superior{ width: 40%; float: left; margin-bottom: 0.500em;}
+.cfooter-inferior{ width: 92%; float: left; margin-bottom: 1em;}
+.cmright{ margin-right: 5%; }
+/*-----  End of Footer Geral  ------*/
+/*===============================
+=            Address            =
+===============================*/
+.address{ background: #222; padding: 2em 0; font-style: normal;}
+/*-----  End of Address  ------*/
+
+
+/*=================================
+=            Postagens            =
+=================================*/
+.posts-intern{ background: #f9f9f9;}
+.text-header-post{ max-width: 80%; float: left;}
+.header-posts{ background: #292929; min-height: 6.125em; margin: 0 0 2em 0; padding: 1em 0;}
+.header-posts h1{ font-size: 2.5em; color: #FFF; margin: 0; padding: 0; font-weight: normal;}
+.header-posts p{ font-size: 0.750em; color: #3C9;}
+.comment-header{ background: #363636; max-width: 20%; float: right; margin: 1em 0; padding: 1em; text-align: center; color: #FFF;}
+.comment-header p{ margin: 0; padding: 0; }
+.post-content{ background: #FFF; width: 68.2%; margin-right: 2%;  border:1px solid #e4e4e4; float: left;}
+.social-post{ padding: 1em 5%;}
+.content{ padding: 5%; letter-spacing: 0.08em; word-spacing: 0.1em; line-height:1.6em; }
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6{ color: #333;}
+.content p{margin: 1em 0; line-height:1.6em; }
+.content iframe{ width: 100%;}
+.content ol li{list-style-type:decimal;margin-left:2em}
+.content ul li{list-style-type:square;margin-left:2em}
+.sidebarleft{ width: 29%; float: left; min-width: 300px;}
+.widgets{ padding: 0.250em 0.750em; background: #FFF; border:1px solid #e4e4e4; margin-bottom: 1em;}
+.widgets h3{ text-transform: uppercase; font-size: 1.5em; font-weight: normal; margin: 0; padding: 0; color: #fe6d4c;}
+/*-----  End of Postagens  ------*/
