@@ -3,7 +3,7 @@ GMEnglish
 
 Site GMEnglish.com.br
 
-# Twitter
+## Twitter
 
 [Magdiel](https://twitter.com/magui_official)
 
@@ -11,10 +11,10 @@ Site GMEnglish.com.br
 
 * [GMEnglish](http://gmdigital.info) - Site de idiomas.
 
-### Testes
+#### Testes
 
 * [Magdiel](https://twitter.com/magui_official)
 
-### Testes
+##### Testes
 
 * [Magdiel](https://twitter.com/magui_official)
